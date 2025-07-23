@@ -1,0 +1,23 @@
+:root {
+    --blue: #1a92d3;
+    --lightgrey: #e2e8f0;
+    --yellow: #f0b42a;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr auto;
+}
+
+.sidebar {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+}
+
+.header {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
