@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,120 +11,180 @@
 </head>
 <body>
     <div class="container">
-        <div class="sidebar">
+        <div class="sidebar bg-blue">
             <div class="logo">
-                <!-- icon -->
+                <!-- https://www.flaticon.com/packs/dog-breeds-5?word=dogs -->
+                <img class="icon" src="./images/fake-logo.svg" alt="Logo"/>
                 <h1>Dashboard</h1>
             </div>
-            <ul id="nav">
-                <li><a href="#"><!-- icon -->Home</a></li>
-                <li><a href="#"><!-- icon -->Profile</a></li>
-                <li><a href="#"><!-- icon -->Messages</a></li>
-                <li><a href="#"><!-- icon -->History</a></li>
-                <li><a href="#"><!-- icon -->Tasks</a></li>
-                <li><a href="#"><!-- icon -->Communities</a></li>
+            <ul class="nav">
+                <li><a href="#"><img class="icon" src="./images/home.svg" alt="" />Home</a></li>
+                <li><a href="#"><img class="icon" src="./images/profile.svg" alt="" />Profile</a></li>
+                <li><a href="#"><img class="icon" src="./images/message.svg" alt="" />Messages</a></li>
+                <li><a href="#"><img class="icon" src="./images/history.svg" alt="" />History</a></li>
+                <li><a href="#"><img class="icon" src="./images/tasks.svg" alt="" />Tasks</a></li>
+                <li><a href="#"><img class="icon" src="./images/users.svg" alt="" />Communities</a></li>
             </ul>
-            <ul id="nav">
-                <li><a href="#">S<!-- icon -->ettings</a></li>
-                <li><a href="#"><!-- icon -->Support</a></li>
-                <li><a href="#"><!-- icon -->Privacy</a></li>
+            <ul class="nav">
+                <li><a href="#"><img class="icon" src="./images/settings.svg" alt="" />Settings</a></li>
+                <li><a href="#"><img class="icon" src="./images/help.svg" alt="" />Support</a></li>
+                <li><a href="#"><img class="icon" src="./images/privacy.svg" alt="" />Privacy</a></li>
             </ul>
         </div>
         <div class="header">
-            <div class="top-header">
-                <div class="search">
-                    <!-- icon -->
-                    <input type="text" name="search" id="search">
-                </div>
-                <!-- notifications icon -->
-                <div class="profile-pic"></div>
-                <div class="profile-name"></div>
+            <div class="search">
+                <img class="icon" src="./images/search.svg" alt="search">
+                <input type="search" name="search" id="search" class="bg-grey">
             </div>
-            <div class="bottom-header">
-                <div class="profile-pic large"></div>
-                <div class="greeting">
-                    <p>Hi there,</p>
-                    <p>Name (@username)</p>
+            <div class="user-details">
+                <img class="icon" src="./images/bell.svg" alt="bell">
+                <div class="profile-image bg-yellow">
+                    <img src="./images/dog1.png" alt="profile">
                 </div>
-                <button class="button header-button">New</button>
-                <button class="button header-button">Upload</button>
-                <button class="button header-button">Share</button>
+                <h2 class="profile-name">Teddy Dog</h2>
+            </div>
+            <div class="greeting">
+                <div class="profile-image large bg-yellow">
+                    <img src="./images/dog1.png" alt="profile"/>
+                </div>
+                <div class="greeting-text">
+                    <p>Hi there,</p>
+                    <h2>Teddy Dog (@teddy)</h2>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="button header-button bg-blue">New</button>
+                <button class="button header-button bg-blue">Upload</button>
+                <button class="button header-button bg-blue">Share</button>
             </div>
         </div>
-        <div class="main-content">
-            <div class="project-cards">
-                <div class="card">
-                    <p class="title"></p>
-                    <p class="description"></p>
-                    <div class="actions"></div>
-                </div>
-                <div class="card">
-                    <p class="title"></p>
-                    <p class="description"></p>
-                    <div class="actions"></div>
-                </div>
-                <div class="card">
-                    <p class="title"></p>
-                    <p class="description"></p>
-                    <div class="actions"></div>
-                </div>
-                <div class="card">
-                    <p class="title"></p>
-                    <p class="description"></p>
-                    <div class="actions"></div>
-                </div>
-                <div class="card">
-                    <p class="title"></p>
-                    <p class="description"></p>
-                    <div class="actions"></div>
-                </div>
-                <div class="card">
-                    <p class="title"></p>
-                    <p class="description"></p>
-                    <div class="actions"></div>
+        <div class="main-content bg-grey">
+            <div class="projects-section">
+                <h2>Your Projects</h2>
+                <div class="projects-content">
+                    <div class="project">
+                        <div class="project-info">
+                            <h3 class="title">Calculator App</h3>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, tempora amet.</p>
+                        </div>
+                        <div class="actions">
+                            <a href="#"><img class="icon" src="./images/star.svg" alt="rate"/></a>
+                            <a href="#"><img class="icon" src="./images/eye.svg" alt="view" /></a>
+                            <a href="#"><img class="icon" src="./images/fork.svg" alt="fork" /></a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project-info">
+                            <h3 class="title">Admin Dashboard</h3>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, nesciunt! Labore minima libero unde iusto molestias omnis temporibus soluta, beatae veritatis voluptas molestiae accusantium ipsum ut eos aliquam quos itaque?</p>
+                        </div>
+                        <div class="actions">
+                            <a href="#"><img class="icon" src="./images/star.svg" alt="rate"/></a>
+                            <a href="#"><img class="icon" src="./images/eye.svg" alt="view" /></a>
+                            <a href="#"><img class="icon" src="./images/fork.svg" alt="fork" /></a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project-info">
+                            <h3 class="title">Etch-A-Sketch</h3>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit architecto nesciunt neque consectetur nisi dicta dignissimos, doloribus alias! Impedit, quidem nam exercitationem reprehenderit cum autem dolor adipisci maiores nostrum id?</p>
+                        </div>
+                        <div class="actions">
+                            <a href="#"><img class="icon" src="./images/star.svg" alt="rate"/></a>
+                            <a href="#"><img class="icon" src="./images/eye.svg" alt="view" /></a>
+                            <a href="#"><img class="icon" src="./images/fork.svg" alt="fork" /></a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project-info">
+                            <h3 class="title">Bullet Journal</h3>
+                            <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ipsa nihil, ex ullam voluptas necessitatibus excepturi pariatur eveniet sint, dicta, qui labore illum assumenda officiis perspiciatis facere? Quo, nesciunt quam!</p>
+                        </div>
+                        <div class="actions">
+                            <a href="#"><img class="icon" src="./images/star.svg" alt="rate"/></a>
+                            <a href="#"><img class="icon" src="./images/eye.svg" alt="view" /></a>
+                            <a href="#"><img class="icon" src="./images/fork.svg" alt="fork" /></a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project-info">
+                            <h3 class="title">Super Cool App</h3>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, cumque. Praesentium quasi, itaque in ipsum accusantium dolor vero autem? Expedita deserunt neque reprehenderit aut. Architecto eligendi adipisci illo minima et?</p>
+                        </div>
+                        <div class="actions">
+                            <a href="#"><img class="icon" src="./images/star.svg" alt="rate"/></a>
+                            <a href="#"><img class="icon" src="./images/eye.svg" alt="view" /></a>
+                            <a href="#"><img class="icon" src="./images/fork.svg" alt="fork" /></a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project-info">
+                            <h3 class="title">Less Cool App</h3>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolore porro adipisci provident cumque atque laudantium eaque ducimus cum illo sequi id enim dignissimos voluptatem, nobis aspernatur, voluptas autem praesentium.</p>
+                        </div>
+                        <div class="actions">
+                            <a href="#"><img class="icon" src="./images/star.svg" alt="rate"/></a>
+                            <a href="#"><img class="icon" src="./images/eye.svg" alt="view" /></a>
+                            <a href="#"><img class="icon" src="./images/fork.svg" alt="fork" /></a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="announcements">
-                <div class="announcement">
-                    <p class="a-title"></p>
-                    <p class="a-description"></p>
-                </div>
-                <div class="announcement">
-                    <p class="a-title"></p>
-                    <p class="a-description"></p>
-                </div>
-                <div class="announcement">
-                    <p class="a-title"></p>
-                    <p class="a-description"></p>
+            <div class="announcements-section">
+                <h2>Announcements</h2>
+                <div class="announcements-content">
+                    <div class="announcement">
+                        <h4 class="a-title">Site Maintenance</h4>
+                        <p class="a-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="announcement">
+                        <h4 class="a-title">Community Day</h4>
+                        <p class="a-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="announcement">
+                        <h4 class="a-title">Updated Privacy Policy</h4>
+                        <p class="a-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </div>
                 </div>
             </div>
-            <div class="trending">
-                <div class="trending-project">
-                    <img src="" alt="" class="project-image">
-                    <div class="details">
-                        <p class="user"></p>
-                        <p class="name"></p>
+            <div class="trending-section">
+                <h2>Trending</h2>
+                <div class="trending-content">
+                    <div class="trending-project">
+                        <div class="profile-image bg-grey">
+                            <img src="./images/dog2.png" alt="User 2">
+                        </div>
+                        <div class="details">
+                            <p>@rosie</p>
+                            <p class="name">Rosie Dog</p>
+                        </div>
                     </div>
-                </div>
-                <div class="trending-project">
-                    <img src="" alt="" class="project-image">
-                    <div class="details">
-                        <p class="user"></p>
-                        <p class="name"></p>
+                    <div class="trending-project">
+                         <div class="profile-image bg-yellow">
+                            <img src="./images/dog1.png" alt="User 2">
+                        </div>
+                        <div class="details">
+                            <p>@teddy</p>
+                            <p class="name">Teddy Dog</p>
+                        </div>
                     </div>
-                </div>
-                <div class="trending-project">
-                    <img src="" alt="" class="project-image">
-                    <div class="details">
-                        <p class="user"></p>
-                        <p class="name"></p>
+                    <div class="trending-project">
+                       <div class="profile-image bg-blue">
+                            <img src="./images/dog3.png" alt="User 2">
+                        </div>
+                        <div class="details">
+                            <p>@coco</p>
+                            <p class="name">Coco Dog</p>
+                        </div>
                     </div>
-                </div>
-                <div class="trending-project">
-                    <img src="" alt="" class="project-image">
-                    <div class="details">
-                        <p class="user"></p>
-                        <p class="name"></p>
+                    <div class="trending-project">
+                       <div class="profile-image bg-grey">
+                            <img src="./images/dog4.png" alt="User 2">
+                        </div>
+                        <div class="details">
+                            <p>@buddy</p>
+                            <p class="name">Buddy Dog</p>
+                        </div>
                     </div>
                 </div>
             </div>
